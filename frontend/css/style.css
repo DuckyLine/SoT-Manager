@@ -19,6 +19,22 @@ main {
     margin-top: 10vh;
 }
 
+footer {
+    background: #0e0e0e;
+
+    height: 10vh;
+    width: 100%;
+
+    font-family: 'Windlass';
+    font-size: x-large;
+    color: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+}
+
 .div_case {
     background: #1d1d1d;
     border: 3px solid #c0c0c0;
@@ -52,4 +68,147 @@ main {
 
 .line {
     border: 2px solid #27af96;
+}
+
+header, nav {
+    position: fixed;
+    background: #0e0e0e;
+
+    height: 10%;
+    width: 100%;
+
+    font-family: 'Windlass';
+    font-size: x-large;
+    color: #ffffff;
+
+    display: flex;
+    align-items: center;
+    padding: 0 10vw;
+    gap: 1%;
+}
+
+.button_home_format {
+    background: none;
+    border: none;
+
+    padding: 1vh 2%;
+
+    font-family: 'Windlass';
+    font-size: x-large;
+    color: #ffffff;
+
+    cursor: pointer;
+
+    transition: background-color 0.2s;
+}
+
+.button_home_format:hover {
+    background-color: #191919;
+}
+
+.popup {
+    transform: translate(-60%, -50%);
+    padding: 0px;
+    left: 50%;
+    top: 60%;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: #1f1f1f;
+    border: none;
+
+    height: 65%;
+    width: 40%;
+
+    font-family: 'Windlass';
+    font-size: x-large;
+    color: #ffffff;
+}
+
+.popup:focus-visible, .button_popup:focus-visible {
+    outline: none;
+}
+
+.popup_title {
+    display: grid;
+    height: auto;
+    place-items: center;
+}
+
+.popup_title img,
+.popup_title p {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.popup_title p {
+    margin: 0;
+}
+
+.div_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 40%;
+}
+
+.div_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 30%;
+
+    gap: 3%;
+}
+
+.button_popup {
+    background: none;
+    border: none;
+
+    padding: 1vh 2%;
+
+    font-family: 'Windlass';
+    font-size: x-large;
+    color: #ffffff;
+
+    cursor: pointer;
+
+    transition: background-color 0.2s;
+}
+
+.button_popup:hover {
+    background-color: #323232;
+}
+
+.flag-container {
+    position: relative;
+    display: inline-block;
+    left: 55%;
+}
+
+.flag-container button {
+    font-size: large;
+    width: 50px;         
+    height: 50px;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    z-index: 1;
+}
+
+.flag-container .flag-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.button_lang_format {
+    cursor: pointer;
 }

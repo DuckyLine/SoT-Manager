@@ -1,34 +1,40 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>SoTManager</title>
-        <link rel="stylesheet" href="../css/footer.css">
+        <title>SoT-Manager</title>
         <link rel="stylesheet" href="../css/style.css">
-        <link rel="stylesheet" href="../css/nav.css">
-        <link rel="stylesheet" href="../css/popup.css">
     </head>
     <body>
         <div id="popup_placeholder"></div>
 
         <header>
-            <nav id="navbar_placeholder"></nav>
+            <nav>
+                <button class="button_home_format" data-i18n="home"></button>
+                <button class="button_home_format" data-i18n="wiki"></button>
+                <div class="flag-container">
+                    <button data-i18n="flag"></button>
+                    <img class="flag-svg" src="../svg/lang.svg" width="50rem">
+                </div>
+            </nav>
         </header>
 
         <main>
             <div class="div_article">
                 <div class="div_article_title">
-                    <h1>Articles</h1>
+                    <h1 data-i18n="articles"></h1>
+                    <img src="../svg/blue-dianne.svg" width="50%" height="10rem">
                 </div>
                 <div>
-                    <div class="div_article_list"></div>
-                    <div class="div_article_list"></div>
                     <div class="div_article_list"></div>
                 </div>
             </div>
         </main>
 
-        <footer id="footerbar_placeholder"></footer>
+        <footer>
+            <p data-i18n="footer"></p>
+        </footer>
 
         <script src="../js/front.js"></script>
+        <script src="../js/popup.js"></script>
     </body>
 </html>
