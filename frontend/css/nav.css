@@ -1,0 +1,35 @@
+header, nav {
+    position: fixed;
+    background: #0e0e0e;
+
+    height: 10%;
+    width: 100%;
+
+    font-family: 'Windlass';
+    font-size: x-large;
+    color: #ffffff;
+
+    display: flex;
+    align-items: center;
+    padding: 0 10vw;
+    gap: 1%;
+}
+
+.button_home_format {
+    background: none;
+    border: none;
+
+    padding: 1vh 2%;
+
+    font-family: 'Windlass';
+    font-size: x-large;
+    color: #ffffff;
+
+    cursor: pointer;
+
+    transition: background-color 0.2s;
+}
+
+.button_home_format:hover {
+    background-color: #191919;
+}

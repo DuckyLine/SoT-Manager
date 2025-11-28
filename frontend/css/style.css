@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'Windlass';
+    src: url('../fonts/Windlass.ttf') format('woff');
+    src: url('../fonts/Windlass.ttf') format('woff2');
+}
+
+html, body {
+    background-color: #171717;
+    margin: 0px;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+
+    margin-top: 10vh;
+}
+
+.div_case {
+    background: #1d1d1d;
+    border: 3px solid #c0c0c0;
+
+    height: 50vh;
+    width: 50vw;
+
+    font-family: 'Windlass';
+    font-size: large;
+}
+
+.div_article {
+    margin: 5%;
+}
+
+.div_article_list {
+    background: #1d1d1d;
+
+    height: 300px;
+    margin: 1% 0;
+
+    font-family: 'Windlass';
+    font-size: large;
+}
+
+.div_article_title {
+    font-family: 'Windlass';
+    font-size: x-large;
+    color: #ffffff;
+}
+
+.line {
+    border: 2px solid #27af96;
+}
